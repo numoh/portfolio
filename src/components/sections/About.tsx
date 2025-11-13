@@ -15,8 +15,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 leading-relaxed">
-              I'm a software developer working at Ericsson (Cloud RAN) via Combitech as a consultant. 
-              I specialize in developing scalable cloud-native solutions and telecommunications infrastructure.
+              I'm a software developer working at Ericsson (Cloud RAN) via Combitech as a consultant.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
               When I am not working, I try to come up with side projects to build new things and fuel my creative side.

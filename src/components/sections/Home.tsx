@@ -15,7 +15,7 @@ export default function Home() {
           Software Developer
         </p>
         <p className="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">
-          I craft digital experiences that blend innovative design with cutting-edge technology
+          Building software solutions and learning new technologies
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
