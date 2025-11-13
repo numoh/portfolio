@@ -13,7 +13,7 @@ export default function About() {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 lg:order-1">
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 leading-relaxed">
               I'm a software developer working at Ericsson (Cloud RAN) via Combitech as a consultant.
             </p>
@@ -21,7 +21,7 @@ export default function About() {
               When I am not working, I try to come up with side projects to build new things and fuel my creative side.
             </p>
             
-            <div className="pt-8">
+            <div className="pt-8 hidden lg:block">
               <a 
                 href="/cv.pdf" 
                 download
@@ -36,7 +36,7 @@ export default function About() {
 
           </div>
           
-          <div className="relative">
+          <div className="relative lg:order-2">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl mx-auto relative overflow-hidden group">
               <img 
                 src="/nuh_image.png" 
@@ -48,6 +48,20 @@ export default function About() {
                 <div className="text-lg font-semibold mb-1">Nuh Jama</div>
                 <div className="text-sm opacity-80">Software Developer</div>
               </div>
+            </div>
+            
+            {/* Mobile CV Button */}
+            <div className="mt-8 text-center lg:hidden">
+              <a 
+                href="/cv.pdf" 
+                download
+                className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800 transition-colors font-medium"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download CV
+              </a>
             </div>
           </div>
         </div>
