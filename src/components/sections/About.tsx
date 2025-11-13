@@ -6,19 +6,19 @@ export default function About() {
 
   return (
     <section id="about" className="min-h-screen py-32 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-black mb-6 text-gray-900">About</h2>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-gray-900">About</h2>
           <div className="w-24 h-1 bg-black mx-auto"></div>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
-            <p className="text-2xl text-gray-700 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 leading-relaxed">
               I'm a software developer working at Ericsson (Cloud RAN) via Combitech as a consultant. 
               I specialize in developing scalable cloud-native solutions and telecommunications infrastructure.
             </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
               When I am not working, I try to come up with side projects to build new things and fuel my creative side.
             </p>
             
@@ -38,7 +38,7 @@ export default function About() {
           </div>
           
           <div className="relative">
-            <div className="w-96 h-96 rounded-3xl mx-auto relative overflow-hidden group">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl mx-auto relative overflow-hidden group">
               <img 
                 src="/nuh_image.png" 
                 alt="Nuh Jama" 

@@ -4,17 +4,17 @@ export default function Home() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-black dark:bg-white text-white dark:text-black relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20"></div>
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
 
-        <h1 className="text-7xl md:text-8xl font-black mb-6 tracking-tight">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight">
           <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
             Nuh Jama
           </span>
         </h1>
-        <p className="text-2xl md:text-3xl text-gray-400 mb-4 font-light">
+        <p className="text-xl sm:text-2xl md:text-3xl text-gray-400 mb-4 font-light">
           Software Developer
         </p>
-        <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">
           I craft digital experiences that blend innovative design with cutting-edge technology
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

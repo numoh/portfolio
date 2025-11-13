@@ -10,16 +10,16 @@ export default function Projects() {
 
   return (
     <section id="projects" className="min-h-screen py-32 bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-black mb-6">Selected Work</h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">Selected Work</h2>
           <div className="w-24 h-1 bg-white mx-auto"></div>
         </div>
         
-        <div className="space-y-24">
+        <div className="space-y-12 sm:space-y-16 lg:space-y-24">
           {projects.map((project, index) => (
             <div key={index} className="group">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className="flex items-center gap-4">
                     <span className="text-6xl font-black text-gray-800">0{index + 1}</span>
@@ -30,11 +30,11 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <h3 className="text-3xl font-bold group-hover:text-gray-300 transition-colors">
+                  <h3 className="text-2xl sm:text-3xl font-bold group-hover:text-gray-300 transition-colors">
                     {project.title}
                   </h3>
                   
-                  <p className="text-lg text-gray-400 leading-relaxed">
+                  <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
                     {project.description}
                   </p>
                   

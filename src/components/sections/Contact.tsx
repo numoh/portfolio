@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
     <section id="contact" className="min-h-screen py-32 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-black mb-6 text-gray-900">Let's Work Together</h2>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-gray-900">Let's Work Together</h2>
           <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
             Have a project in mind? Let's discuss how we can bring your ideas to life.
           </p>
           <div className="flex justify-center items-center gap-8 text-gray-400">
@@ -17,8 +17,8 @@ export default function Contact() {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl p-12 shadow-lg border border-gray-100">
-            <div className="grid grid-cols-2 gap-12">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg border border-gray-100">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
               <div className="text-center">
                 <div className="flex flex-col items-center gap-6">
                   <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
@@ -26,7 +26,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Email</div>
-                    <div className="text-xl font-medium text-gray-900">numoh.55@gmail.com</div>
+                    <div className="text-lg sm:text-xl font-medium text-gray-900 break-all">numoh.55@gmail.com</div>
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Phone</div>
-                    <div className="text-xl font-medium text-gray-900">+46765641298</div>
+                    <div className="text-lg sm:text-xl font-medium text-gray-900">+46765641298</div>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Location</div>
-                    <div className="text-xl font-medium text-gray-900">Stockholm, Sweden</div>
+                    <div className="text-lg sm:text-xl font-medium text-gray-900">Stockholm, Sweden</div>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function Contact() {
                   </a>
                   <div>
                     <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Connect</div>
-                    <div className="text-xl font-medium text-gray-900">LinkedIn</div>
+                    <div className="text-lg sm:text-xl font-medium text-gray-900">LinkedIn</div>
                   </div>
                 </div>
               </div>
