@@ -1,8 +1,8 @@
 export default function Projects() {
   const projects = [
     { 
-      title: "Floor Plan to 3D Visualizer", 
-      description: "Convert 2D apartment floor plans into interactive 3D models for better space visualization and planning",
+      title: "Project TBA", 
+      description: "An exciting new project currently in development. More details coming soon",
       tech: ["Babylon.js", "Next.js", "TypeScript", "PostgreSQL"],
       status: "In Development"
     }
