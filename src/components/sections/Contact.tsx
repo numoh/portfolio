@@ -18,7 +18,7 @@ export default function Contact() {
         
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg border border-gray-100">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16">
               <div className="text-center">
                 <div className="flex flex-col items-center gap-6">
                   <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
