@@ -36,7 +36,7 @@ export default function About() {
 
           </div>
           
-          <div className="relative lg:order-2">
+          <div className="relative lg:order-2 pb-24 lg:pb-0">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl mx-auto relative overflow-hidden group">
               <img 
                 src="/nuh_image.png" 
@@ -51,7 +51,7 @@ export default function About() {
             </div>
             
             {/* Mobile CV Button */}
-            <div className="mt-8 text-center lg:hidden">
+            <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 lg:hidden">
               <a 
                 href="/cv.pdf" 
                 download
