@@ -4,9 +4,11 @@ import { useState } from 'react';
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
   
   const toggleTheme = () => {
@@ -33,13 +35,28 @@ export default function Navbar() {
             <button onClick={() => scrollTo('projects')} className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Work</button>
             <button onClick={() => scrollTo('contact')} className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</button>
           </div>
-          <button className="sm:hidden text-gray-300 hover:text-white">
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="sm:hidden text-gray-300 hover:text-white"
+          >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
 
         </div>
+        
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="sm:hidden bg-black/95 backdrop-blur-xl border-t border-gray-800">
+            <div className="px-4 py-4 space-y-4">
+              <button onClick={() => scrollTo('home')} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-2">Home</button>
+              <button onClick={() => scrollTo('about')} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-2">About</button>
+              <button onClick={() => scrollTo('projects')} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-2">Work</button>
+              <button onClick={() => scrollTo('contact')} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-2">Contact</button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
