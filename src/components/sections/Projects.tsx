@@ -1,10 +1,15 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function Projects() {
+  const { t } = useLanguage();
   const projects = [
     { 
-      title: "Project TBA", 
-      description: "An exciting new project currently in development. More details coming soon",
+      title: t('projectTBA'), 
+      description: t('projectDescription'),
       tech: ["Babylon.js", "Next.js", "TypeScript", "PostgreSQL"],
-      status: "In Development"
+      status: t('inDevelopment')
     }
   ];
 
@@ -12,7 +17,7 @@ export default function Projects() {
     <section id="projects" className="min-h-screen py-32 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">Selected Work</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">{t('selectedWork')}</h2>
           <div className="w-24 h-1 bg-white mx-auto"></div>
         </div>
         
@@ -48,10 +53,10 @@ export default function Projects() {
                   
                   <div className="flex gap-4 pt-4">
                     <button className="text-white hover:text-gray-300 transition-colors font-medium">
-                      View Project →
+                      {t('viewProject')} →
                     </button>
                     <button className="text-gray-400 hover:text-white transition-colors font-medium">
-                      GitHub →
+                      {t('github')} →
                     </button>
                   </div>
                 </div>

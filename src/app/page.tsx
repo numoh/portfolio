@@ -4,16 +4,19 @@ import About from '@/components/sections/About';
 import Projects from '@/components/sections/Projects';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/Footer';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 export default function Page() {
   return (
-    <main>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <LanguageProvider>
+      <main>
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+    </LanguageProvider>
   );
 }

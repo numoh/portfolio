@@ -1,17 +1,22 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function Contact() {
+  const { t } = useLanguage();
   return (
     <section id="contact" className="min-h-screen py-32 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-gray-900">Let's Work Together</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-gray-900">{t('letsWorkTogether')}</h2>
           <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
-            Have a project in mind? Let's discuss how we can bring your ideas to life.
+            {t('contactDescription')}
           </p>
           <div className="flex justify-center items-center gap-8 text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm">Available for work</span>
+              <span className="text-sm">{t('availableForWork')}</span>
             </div>
           </div>
         </div>
@@ -25,7 +30,7 @@ export default function Contact() {
                     <span className="text-white text-xl">@</span>
                   </div>
                   <div>
-                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Email</div>
+                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">{t('email')}</div>
                     <div className="text-lg sm:text-xl font-medium text-gray-900 break-all">numoh.55@gmail.com</div>
                   </div>
                 </a>
@@ -37,7 +42,7 @@ export default function Contact() {
                     <span className="text-white text-xl">📞</span>
                   </div>
                   <div>
-                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Phone</div>
+                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">{t('phone')}</div>
                     <div className="text-lg sm:text-xl font-medium text-gray-900">+46765641298</div>
                   </div>
                 </div>
@@ -49,7 +54,7 @@ export default function Contact() {
                     <span className="text-white text-xl">📍</span>
                   </div>
                   <div>
-                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Location</div>
+                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">{t('location')}</div>
                     <div className="text-lg sm:text-xl font-medium text-gray-900">Stockholm, Sweden</div>
                   </div>
                 </div>
@@ -68,7 +73,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <div>
-                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Connect</div>
+                    <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">{t('connect')}</div>
                     <div className="text-lg sm:text-xl font-medium text-gray-900">LinkedIn</div>
                   </div>
                 </div>
