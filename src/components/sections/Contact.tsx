@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg border border-gray-100">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16">
               <div className="text-center">
-                <div className="flex flex-col items-center gap-6">
+                <a href="mailto:numoh.55@gmail.com" className="flex flex-col items-center gap-6 hover:opacity-80 transition-opacity">
                   <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center">
                     <span className="text-white text-xl">@</span>
                   </div>
@@ -28,7 +28,7 @@ export default function Contact() {
                     <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Email</div>
                     <div className="text-lg sm:text-xl font-medium text-gray-900 break-all">numoh.55@gmail.com</div>
                   </div>
-                </div>
+                </a>
               </div>
               
               <div className="text-center">
